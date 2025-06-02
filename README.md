@@ -1,5 +1,7 @@
 # Adding SSL Decryption/MITM certificates to application-specific trust stores for common apps
 
+Some applications do not, by default, leverage the system certificate trust store.  When SSL decryption is enabled for these sites, the connecton will fail or the application will present a certificate error (often leading to reversing course on enablement of SSL decryption).  Enabling the application to trust the MITM certificate, or the system root store, can resolve these issues.  Guides below for common/well known applications.
+
 <details>
 <summary>Azure CLI (Microsoft)</summary>
 To add a custom root into the Azure CLI trust store, add the PEM to the following file.
@@ -20,6 +22,17 @@ Configure Mozilla Firefox to use the Windows root certificate store.
 
 </details>
 
+
+<details>
+<summary>Java</summary>
+Download the certificate bundle in DER format.   Place in the JAVA_HOME/bin directory and run the keytool utility.
+
+> keytool  -import  -trustcacerts -alias <certAlias> -file <certFile> -keystore <trustStoreFile>
+
+Example
+
+> keytool  -import  -trustcacerts -alias decryptrootca -file decryptrootca.der -keystore $JAVA_HOME/jre/lib/security/cacerts
+</details>
 
 <details>
 <summary>Python</summary> 
