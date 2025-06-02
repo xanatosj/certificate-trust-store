@@ -1,14 +1,28 @@
 # Adding SSL Decryption/MITM certificates to application-specific trust stores for common apps
+
 <details>
-<summary>Snowflake ODBC Driver</summary>
-Replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your custom CA PEM file.
+<summary>Azure CLI (Microsoft)</summary>
+To add a custom root into the Azure CLI trust store, add the PEM to the following file.
 
-* Ensure that you specify the full path to the Android Studio Keystore.
+> C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\Lib\site-packages\certifi\cacert.pem
 
-* In later versions of Android Studio (Android Studio version 2024.1.1 Patch 1 or later), the JRE directory might not be present; use the JBR directory instead.
 </details>
+
+
 <details>
-<summary>Python via PIP</summary> 
+<summary>Firefox (Mozilla)</summary>
+Configure Mozilla Firefox to use the Windows root certificate store.
+
+* In the browser, type "about:config" in the browser.  When the caution prompt appears, select Accept the Risk and Continue.
+> about:config
+* In the config search bar, type "security.enterprise_roots.enabled".  Change the option from False to True
+> security.enterprise_roots.enabled
+
+</details>
+
+
+<details>
+<summary>Python</summary> 
 Use one of the following methods for Python via PIP.
 <details>
  <summary> Adding the custom certificate</summary>
@@ -46,4 +60,14 @@ Run the following commands to set the SSL_CERT_FILE option to use the (downloade
 > export SSL_CERT_DIR=${CERT_DIR}
 > 
 > export REQUESTS_CA_BUNDLE=${CERT_PATH} 
+</details>
+</details>
+<details>
+<summary>Snowflake ODBC Driver</summary>
+Snowflake can be configured to connect to the data warehouse over https; to allow this via proxy, replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your custom CA PEM file.
+
+> C:\Program Files\Snowflake ODBC Driver\etc
+
+* If the JRE directory is not present, use the JBR directory instead (Android Studio Version dependant).
+* Ensure that you specify the full path to the Android Studio Keystore.
 </details>
