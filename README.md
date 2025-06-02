@@ -8,7 +8,10 @@ Replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your 
 * In later versions of Android Studio (Android Studio version 2024.1.1 Patch 1 or later), the JRE directory might not be present; use the JBR directory instead.
 </details>
 <details>
-<summary>Python via PIP (In Progress)</summary> Python
+<summary>Python via PIP</summary> 
+Use one of the following methods for Python via PIP.
+<details>
+ <summary> Adding the custom certificate</summary>
 <details>
 <summary>MacOS/Linux</summary>
 
@@ -29,4 +32,18 @@ Replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your 
 
 > pip config set global.cert $env:APPDATA\custom-ca-bundle.pem 
 </details>
+</details>
+<details>
+<summary>Set via the environment variables</summary>
+Run the following commands to set the SSL_CERT_FILE option to use the (downloaded) cert bundle
+ 
+> export CERT_PATH=/etc/ssl/certs/SSLDecrypt.pem
+> 
+> export CERT_DIR=/etc/ssl/certs/
+> 
+> export SSL_CERT_FILE=${CERT_PATH}
+> 
+> export SSL_CERT_DIR=${CERT_DIR}
+> 
+> export REQUESTS_CA_BUNDLE=${CERT_PATH} 
 </details>
