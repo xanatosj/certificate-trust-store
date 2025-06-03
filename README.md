@@ -75,6 +75,21 @@ Run the following commands to set the SSL_CERT_FILE option to use the (downloade
 > export REQUESTS_CA_BUNDLE=${CERT_PATH} 
 </details>
 </details>
+
+<details>
+<summary>Rust (Linux)</summary>
+Use Rust to add the decryption root ca to the Linux Trust store
+
+1) Place root certificate(s) in the following directory
+> /usr/local/share/ca-certificates/
+2) Update the CA store via CLI.  Note - Sudo permissions required
+
+ > sudo update-ca-certificates
+
+
+</details>
+
+
 <details>
 <summary>Snowflake ODBC Driver</summary>
 Snowflake can be configured to connect to the data warehouse over https; to allow this via proxy, replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your custom CA PEM file.
