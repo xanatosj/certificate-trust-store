@@ -178,3 +178,19 @@ Snowflake can be configured to connect to the data warehouse over https; to allo
 * If the JRE directory is not present, use the JBR directory instead (Android Studio Version dependant).
 * Ensure that you specify the full path to the Android Studio Keystore.
 </details>
+
+
+<details>
+<summary>VSCode</summary>
+ 
+By default VSCode does not use the built-in certificate store (Windows) or the System Keychain (macOS); VSCode needs to have a plugin installed to instruct it to use the certificate store (Windows), or System Keychain (macOS)
+
+
+_**macOS**_
+
+This is a custom plugin at the VSCode Marketplace - [Mac CA VSCode - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=linhmtran168.mac-ca-vscode)
+
+_**Windows**_
+
+This is a custom plugin at the VSCode Marketplace - [win-ca - Visual Studio Marketplace ] (https://marketplace.visualstudio.com/items?itemName=ukoloff.win-ca)
+</details>
