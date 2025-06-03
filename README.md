@@ -35,6 +35,15 @@ Example
 </details>
 
 <details>
+<summary>npm</summary>
+ 
+1) Create a PEM file containing the root and intermediate certificates
+
+2) Run npm command, setting the cafile
+> npm config set cafile path/of/ca-bundle.pem
+</details>
+
+<details>
 <summary>Python</summary> 
 Use one of the following methods for Python via PIP.
 <details>
