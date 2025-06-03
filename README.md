@@ -22,6 +22,24 @@ To add a custom root into the Azure CLI trust store, add the PEM to the followin
 
 </details>
 
+<details>
+<summary>cURL</summary>
+Create a certificate bundle that includes the Root CA certificate and the public Certificate Authorities
+
+Set cacert config option
+
+> echo "cacert=/path/to/ca-cert-bundle.pem" >> $HOME/.curlrc
+
+Set CURL_CA_BUNDLE environment variable
+
+> echo "export CURL_CA_BUNDLE=/path/to/ca-cert-bundle.pem" >> $HOME/.bashrc
+
+Set SSL_CERT_FILE environment variable
+
+> echo "export SSL_CERT_FILE=/path/to/ca-cert-bundle.pem" >> $HOME/.bashrc
+
+</details>
+
 
 <details>
 <summary>Firefox (Mozilla)</summary>
