@@ -1,8 +1,17 @@
-# Adding SSL Decryption/MITM certificates to application-specific trust stores for common apps
+# Deploying CA Certificates
 
-Some applications do not, by default, leverage the system certificate trust store.  When SSL decryption is enabled for these sites, the connecton will fail or the application will present a certificate error (often leading to reversing course on enablement of SSL decryption).  Enabling the application to trust the MITM certificate, or the system root store, can resolve these issues.  Guides below for common/well known applications.
+## Why is this needed? 
+Applications are not typically aware of upstream devices/services that perform SSL/TLS decryption of traffic. When a connection attempt is made and the device/application is unaware of this certificate, it doesn’t allow for the secure handshake to complete.  Updating the trusted certificate store for the application removes the requirement for either removing the traffic from the scope of decryption and/or instructing tools to bypass certificate validation for secure connections.
 
+## Assumption
+* The Root CA is already available in base64 format (pem).
+* All traffic is tunneled through the solution that is performing decryption. (i.e. no SSL/TLS decryption exclusions)
+* To get a cacert.pem bundle, you can download it from here https://curl.se/ca/cacert.pem 
 
+## Disclaimer
+This document is subject to change due to applications changing the ways they potentially use certificates.
+
+## Tools/Application list with Guides
 <details>
 <summary>AWS CLI (Amazon Web Services)</summary>
  
