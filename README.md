@@ -2,6 +2,18 @@
 
 Some applications do not, by default, leverage the system certificate trust store.  When SSL decryption is enabled for these sites, the connecton will fail or the application will present a certificate error (often leading to reversing course on enablement of SSL decryption).  Enabling the application to trust the MITM certificate, or the system root store, can resolve these issues.  Guides below for common/well known applications.
 
+
+<details>
+<summary>AWS CLI (Amazon Web Services)</summary>
+ 
+1) Download the certificate bundle (root and intermediates)
+
+2) Run the below powershell command (Windows) or terminal command (linux)
+
+> aws configure set default.ca_bundle decryptionbundle.pem
+
+</details>
+
 <details>
 <summary>Azure CLI (Microsoft)</summary>
 To add a custom root into the Azure CLI trust store, add the PEM to the following file.
