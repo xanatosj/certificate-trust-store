@@ -44,6 +44,15 @@ Example
 </details>
 
 <details>
+<summary>PHP</summary>
+ 
+Inside php.ini specify path to the certs.  Create the following entry:
+> openssl.cafile=/path/to/cacert.pem
+
+_Restart of web services may be needed_
+</details>
+
+<details>
 <summary>Python</summary> 
 Use one of the following methods for Python via PIP.
 <details>
