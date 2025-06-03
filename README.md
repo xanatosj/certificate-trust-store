@@ -51,6 +51,20 @@ Set SSL_CERT_FILE environment variable
 
 
 <details>
+<summary>Docker</summary>
+When building containers within docker, we need to copy the certificate into the container and into the appropriate location. 
+
+> \# Previous Dockerfile lines \
+> \# Add the Root CA Certificate to the container \
+> ADD ca-cert-bundle.pem /tmp/ca-cert-bundle.pem \
+> \# Find the location of the certificate directory. Copy the ca-cert-bundle.pem file into this directory. Run update-ca-certificates. \ 
+> RUN CERT_DIR=(openssl version -d | cut -f2 -d \")/certs ; cp /tmp/ca-cert-bundle.pem $CERT_DIR ; update-ca-certificates ; \
+> \# More Dockerfile lines \
+
+
+</details>
+
+<details>
 <summary>Firefox (Mozilla)</summary>
 Configure Mozilla Firefox to use the Windows root certificate store.
 
