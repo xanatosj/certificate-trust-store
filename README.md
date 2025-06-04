@@ -141,15 +141,7 @@ Use Rust to add the decryption root ca to the Linux Trust store
 </details>
 
 
-<details>
-<summary>Snowflake ODBC Driver</summary>
-Snowflake can be configured to connect to the data warehouse over https; to allow this via proxy, replace the PEM file under C:\Program Files\Snowflake ODBC Driver\etc with your custom CA PEM file.
 
-> C:\Program Files\Snowflake ODBC Driver\etc
-
-* If the JRE directory is not present, use the JBR directory instead (Android Studio Version dependant).
-* Ensure that you specify the full path to the Android Studio Keystore.
-</details>
-
+[Snowflake ODBC Driver](https://github.com/xanatosj/certificate-trust-store/blob/main/snowflake/snowflake.md)
 
 [VSCode](https://github.com/xanatosj/certificate-trust-store/blob/main/VSCode/VSCode.md)
