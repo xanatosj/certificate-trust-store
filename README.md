@@ -84,16 +84,9 @@ https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-tru
 </details>
 
 
-<details>
-<summary>Java</summary>
-Download the certificate bundle in DER format.   Place in the JAVA_HOME/bin directory and run the keytool utility.
 
-> keytool  -import  -trustcacerts -alias <certAlias> -file <certFile> -keystore <trustStoreFile>
+[Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
 
-Example
-
-> keytool  -import  -trustcacerts -alias decryptrootca -file decryptrootca.der -keystore $JAVA_HOME/jre/lib/security/cacerts
-</details>
 
 <details>
 <summary>npm</summary>
