@@ -73,14 +73,8 @@ https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-tru
 [Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
 
 
-<details>
-<summary>npm</summary>
- 
-1) Create a PEM file containing the root and intermediate certificates
+[npm](https://github.com/xanatosj/certificate-trust-store/blob/main/npm/npm.md)
 
-2) Run npm command, setting the cafile
-> npm config set cafile path/of/ca-bundle.pem
-</details>
 
 <details>
 <summary>PHP</summary>
