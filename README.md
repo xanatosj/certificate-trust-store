@@ -14,7 +14,7 @@ To create a certificate bundle that includes both the public Certificate Authori
 ## Disclaimer
 This document is subject to change due to applications changing the ways they potentially use certificates.
 
-## Tools/Application list with Guides
+## Application Guide List
 [AWS CLI (Amazon Web Services)](https://github.com/xanatosj/certificate-trust-store/blob/main/AWS/AWSCLI.md)
 
 [Azure CLI](https://github.com/xanatosj/certificate-trust-store/blob/main/AzureCLI/AzureCLI.md)
@@ -23,16 +23,7 @@ This document is subject to change due to applications changing the ways they po
 
 [Docker](https://github.com/xanatosj/certificate-trust-store/blob/main/docker/dockerfile.md)
 
-<details>
-<summary>Firefox (Mozilla)</summary>
-Configure Mozilla Firefox to use the Windows root certificate store.
-
-* In the browser, type "about:config" in the browser.  When the caution prompt appears, select Accept the Risk and Continue.
-> about:config
-* In the config search bar, type "security.enterprise_roots.enabled".  Change the option from False to True
-> security.enterprise_roots.enabled
-
-</details>
+[Firefox](https://github.com/xanatosj/certificate-trust-store/blob/main/firefox/firefox.md)
 
 [Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
