@@ -158,17 +158,4 @@ Snowflake can be configured to connect to the data warehouse over https; to allo
 </details>
 
 
-<details>
-<summary>VSCode</summary>
- 
-By default VSCode does not use the built-in certificate store (Windows) or the System Keychain (macOS); VSCode needs to have a plugin installed to instruct it to use the certificate store (Windows), or System Keychain (macOS)
-
-
-_**macOS**_
-
-This is a custom plugin at the VSCode Marketplace - [Mac CA VSCode - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=linhmtran168.mac-ca-vscode)
-
-_**Windows**_
-
-This is a custom plugin at the VSCode Marketplace - [win-ca - Visual Studio Marketplace ] (https://marketplace.visualstudio.com/items?itemName=ukoloff.win-ca)
-</details>
+[VSCode](https://github.com/xanatosj/certificate-trust-store/blob/main/VSCode/VSCode.md)
