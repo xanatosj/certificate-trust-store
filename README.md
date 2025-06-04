@@ -31,6 +31,8 @@ This document is subject to change due to applications changing the ways they po
 
 [Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
 
+[Minikube](https://minikube.sigs.k8s.io/docs/handbook/vpn_and_proxy/#x509-certificate-signed-by-unknown-authority)
+
 [npm](https://github.com/xanatosj/certificate-trust-store/blob/main/npm/npm.md)
 
 [PHP](https://github.com/xanatosj/certificate-trust-store/blob/main/php/php.md)
