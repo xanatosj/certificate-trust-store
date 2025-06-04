@@ -3,10 +3,13 @@
 ## Why is this needed? 
 Applications are not typically aware of upstream devices/services that perform SSL/TLS decryption of traffic. When a connection attempt is made and the device/application is unaware of this certificate, it doesn’t allow for the secure handshake to complete.  Updating the trusted certificate store for the application removes the requirement for either removing the traffic from the scope of decryption and/or instructing tools to bypass certificate validation for secure connections.
 
-## Assumption
-* The Root CA is already available in base64 format (pem).
-* All traffic is tunneled through the solution that is performing decryption. (i.e. no SSL/TLS decryption exclusions)
-* To get a cacert.pem bundle, you can download it from here https://curl.se/ca/cacert.pem 
+## Creating a certificate bundle
+
+To create a certificate bundle that includes both the public Certificate Authorities and the corporate Certificate authority. 
+
+* Download the certificate bundle from [https://curl.se/ca/cacert.pem](https://curl.se/ca/cacert.pem) 
+
+* Append the Root CA Certificate(s) to the cacert.pem file that you downloaded. It is recommended to save this as a new file name: ```ca-cert-bundle.pem```. 
 
 ## Disclaimer
 This document is subject to change due to applications changing the ways they potentially use certificates.
