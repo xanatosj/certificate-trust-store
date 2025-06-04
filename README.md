@@ -12,16 +12,7 @@ Applications are not typically aware of upstream devices/services that perform S
 This document is subject to change due to applications changing the ways they potentially use certificates.
 
 ## Tools/Application list with Guides
-<details>
-<summary>AWS CLI (Amazon Web Services)</summary>
- 
-1) Download the certificate bundle (root and intermediates)
-
-2) Run the below powershell command (Windows) or terminal command (linux)
-
-> aws configure set default.ca_bundle decryptionbundle.pem
-
-</details>
+[AWS CLI (Amazon Web Services)](https://github.com/xanatosj/certificate-trust-store/blob/main/AWS/AWSCLI.md)
 
 <details>
 <summary>Azure CLI (Microsoft)</summary>
