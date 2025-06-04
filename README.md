@@ -60,14 +60,7 @@ Configure Mozilla Firefox to use the Windows root certificate store.
 
 </details>
 
-<details>
-<summary>Intune (Microsoft)</summary>
-Follow Microsoft provisioning guide
- 
-https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root
-
-</details>
-
+[Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
 
 [Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
