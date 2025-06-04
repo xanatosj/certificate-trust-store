@@ -36,56 +36,13 @@ Configure Mozilla Firefox to use the Windows root certificate store.
 
 [Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
-
 [Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
-
 
 [npm](https://github.com/xanatosj/certificate-trust-store/blob/main/npm/npm.md)
 
-
 [PHP](https://github.com/xanatosj/certificate-trust-store/blob/main/php/php.md)
 
-<details>
-<summary>Python</summary> 
-Use one of the following methods for Python via PIP.
-<details>
- <summary> Adding the custom certificate</summary>
-<details>
-<summary>MacOS/Linux</summary>
-
-1) Create a directory to host the CA Cert Bundle.  Move the cert bundle to that location
-> mkdir ~/ca_certs
-> mv ~/Downloads/custom-ca-bundle.pem ~/ca_certs
-2) Add cert bundle to python to trust the cert chain
-
-> pip config set global.cert ~/ca_certs
-</details>
-<details>
-<summary>Windows</summary>
- 
-1) Create a new directory and move the bundle to C:\ drive.
- 
-2) Add certificate bundle to python trust store (command below via Powershell)
-> mv $env:HOMEPATH\Downloads\custom-ca-bundle.pem $env:APPDATA
-
-> pip config set global.cert $env:APPDATA\custom-ca-bundle.pem 
-</details>
-</details>
-<details>
-<summary>Set via the environment variables</summary>
-Run the following commands to set the SSL_CERT_FILE option to use the (downloaded) cert bundle
- 
-> export CERT_PATH=/etc/ssl/certs/SSLDecrypt.pem
-> 
-> export CERT_DIR=/etc/ssl/certs/
-> 
-> export SSL_CERT_FILE=${CERT_PATH}
-> 
-> export SSL_CERT_DIR=${CERT_DIR}
-> 
-> export REQUESTS_CA_BUNDLE=${CERT_PATH} 
-</details>
-</details>
+[Python](https://github.com/xanatosj/certificate-trust-store/blob/main/python/python.md)
 
 [Rust](https://github.com/xanatosj/certificate-trust-store/blob/main/rust/rust.md)
 
