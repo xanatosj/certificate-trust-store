@@ -19,23 +19,7 @@ This document is subject to change due to applications changing the ways they po
 
 [Azure CLI](https://github.com/xanatosj/certificate-trust-store/blob/main/AzureCLI/AzureCLI.md)
 
-<details>
-<summary>cURL</summary>
-Create a certificate bundle that includes the Root CA certificate and the public Certificate Authorities
-
-Set cacert config option
-
-> echo "cacert=/path/to/ca-cert-bundle.pem" >> $HOME/.curlrc
-
-Set CURL_CA_BUNDLE environment variable
-
-> echo "export CURL_CA_BUNDLE=/path/to/ca-cert-bundle.pem" >> $HOME/.bashrc
-
-Set SSL_CERT_FILE environment variable
-
-> echo "export SSL_CERT_FILE=/path/to/ca-cert-bundle.pem" >> $HOME/.bashrc
-
-</details>
+[cURL](https://github.com/xanatosj/certificate-trust-store/blob/main/curl/curl.md)
 
 [Docker](https://github.com/xanatosj/certificate-trust-store/blob/main/docker/dockerfile.md)
 
