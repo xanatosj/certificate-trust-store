@@ -127,20 +127,7 @@ Run the following commands to set the SSL_CERT_FILE option to use the (downloade
 </details>
 </details>
 
-<details>
-<summary>Rust (Linux)</summary>
-Use Rust to add the decryption root ca to the Linux Trust store
-
-1) Place root certificate(s) in the following directory
-> /usr/local/share/ca-certificates/
-2) Update the CA store via CLI.  Note - Sudo permissions required
-
- > sudo update-ca-certificates
-
-
-</details>
-
-
+[Rust](https://github.com/xanatosj/certificate-trust-store/blob/main/rust/rust.md)
 
 [Snowflake ODBC Driver](https://github.com/xanatosj/certificate-trust-store/blob/main/snowflake/snowflake.md)
 
