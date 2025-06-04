@@ -25,6 +25,8 @@ This document is subject to change due to applications changing the ways they po
 
 [Firefox](https://github.com/xanatosj/certificate-trust-store/blob/main/firefox/firefox.md)
 
+[GIT](https://github.com/xanatosj/certificate-trust-store/blob/main/git/git.md)
+
 [Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
 [Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
