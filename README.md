@@ -14,13 +14,7 @@ This document is subject to change due to applications changing the ways they po
 ## Tools/Application list with Guides
 [AWS CLI (Amazon Web Services)](https://github.com/xanatosj/certificate-trust-store/blob/main/AWS/AWSCLI.md)
 
-<details>
-<summary>Azure CLI (Microsoft)</summary>
-To add a custom root into the Azure CLI trust store, add the PEM to the following file.
-
-> C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\Lib\site-packages\certifi\cacert.pem
-
-</details>
+[Azure CLI](https://github.com/xanatosj/certificate-trust-store/blob/main/AzureCLI/AzureCLI.md)
 
 <details>
 <summary>cURL</summary>
