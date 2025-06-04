@@ -92,3 +92,5 @@ Run the following commands to set the SSL_CERT_FILE option to use the (downloade
 [Snowflake ODBC Driver](https://github.com/xanatosj/certificate-trust-store/blob/main/snowflake/snowflake.md)
 
 [VSCode](https://github.com/xanatosj/certificate-trust-store/blob/main/VSCode/VSCode.md)
+
+[wget](https://github.com/xanatosj/certificate-trust-store/blob/main/wget/wget.md)
