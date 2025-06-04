@@ -43,14 +43,7 @@ Configure Mozilla Firefox to use the Windows root certificate store.
 [npm](https://github.com/xanatosj/certificate-trust-store/blob/main/npm/npm.md)
 
 
-<details>
-<summary>PHP</summary>
- 
-Inside php.ini specify path to the certs.  Create the following entry:
-> openssl.cafile=/path/to/cacert.pem
-
-_Restart of web services may be needed_
-</details>
+[PHP](https://github.com/xanatosj/certificate-trust-store/blob/main/php/php.md)
 
 <details>
 <summary>Python</summary> 
