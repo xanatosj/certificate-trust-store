@@ -25,7 +25,7 @@ This document is subject to change due to applications changing the ways they po
 
 [Firefox](applications/firefox/firefox.md)
 
-[GIT](applications/main/git/git.md)
+[GIT](applications/git/git.md)
 
 [Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
@@ -45,4 +45,4 @@ This document is subject to change due to applications changing the ways they po
 
 [VSCode](applications/VSCode/VSCode.md)
 
-[wget](https://github.com/xanatosj/certificate-trust-store/blob/main/wget/wget.md)
+[wget](applications/wget/wget.md)
