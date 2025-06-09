@@ -15,7 +15,7 @@ To create a certificate bundle that includes both the public Certificate Authori
 This document is subject to change due to applications changing the ways they potentially use certificates.
 
 ## Application Guide List
-[AWS CLI (Amazon Web Services)](https://github.com/xanatosj/certificate-trust-store/blob/main/AWS/AWSCLI.md)
+[AWS CLI (Amazon Web Services)](applications/AWS/AWSCLI.md)
 
 [Azure CLI](https://github.com/xanatosj/certificate-trust-store/blob/main/AzureCLI/AzureCLI.md)
 
