@@ -17,32 +17,32 @@ This document is subject to change due to applications changing the ways they po
 ## Application Guide List
 [AWS CLI (Amazon Web Services)](applications/AWS/AWSCLI.md)
 
-[Azure CLI](https://github.com/xanatosj/certificate-trust-store/blob/main/AzureCLI/AzureCLI.md)
+[Azure CLI](applications/AzureCLI/AzureCLI.md)
 
-[cURL](https://github.com/xanatosj/certificate-trust-store/blob/main/curl/curl.md)
+[cURL](applications/curl/curl.md)
 
-[Docker](https://github.com/xanatosj/certificate-trust-store/blob/main/docker/dockerfile.md)
+[Docker](applications/docker/dockerfile.md)
 
-[Firefox](https://github.com/xanatosj/certificate-trust-store/blob/main/firefox/firefox.md)
+[Firefox](applications/firefox/firefox.md)
 
-[GIT](https://github.com/xanatosj/certificate-trust-store/blob/main/git/git.md)
+[GIT](applications/main/git/git.md)
 
 [Intune Provisioning Guide](https://learn.microsoft.com/en-us/intune/intune-service/protect/certificates-trusted-root)
 
-[Java](https://github.com/xanatosj/certificate-trust-store/blob/main/Java/Java.md)
+[Java](applications/Java/Java.md)
 
 [Minikube](https://minikube.sigs.k8s.io/docs/handbook/vpn_and_proxy/#x509-certificate-signed-by-unknown-authority)
 
-[npm](https://github.com/xanatosj/certificate-trust-store/blob/main/npm/npm.md)
+[npm](applications/npm/npm.md)
 
-[PHP](https://github.com/xanatosj/certificate-trust-store/blob/main/php/php.md)
+[PHP](applications/php/php.md)
 
-[Python](https://github.com/xanatosj/certificate-trust-store/blob/main/python/python.md)
+[Python](applications/python/python.md)
 
-[Rust](https://github.com/xanatosj/certificate-trust-store/blob/main/rust/rust.md)
+[Rust](applications/rust/rust.md)
 
-[Snowflake ODBC Driver](https://github.com/xanatosj/certificate-trust-store/blob/main/snowflake/snowflake.md)
+[Snowflake ODBC Driver](applications/snowflake/snowflake.md)
 
-[VSCode](https://github.com/xanatosj/certificate-trust-store/blob/main/VSCode/VSCode.md)
+[VSCode](applications/VSCode/VSCode.md)
 
 [wget](https://github.com/xanatosj/certificate-trust-store/blob/main/wget/wget.md)
