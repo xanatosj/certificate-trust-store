@@ -10,6 +10,7 @@ ADD ca-cert-bundle.pem /tmp/ca-cert-bundle.pem
 ```
 * Find the location of the certificate directory. Copy the ca-cert-bundle.pem file into this directory. Run update-ca-certificates.
 
+***Note:** The following command is specific to Debian-based systems.*
 ```
 RUN CERT_DIR=(openssl version -d | cut -f2 -d \")/certs ; cp /tmp/ca-cert-bundle.pem $CERT_DIR ; update-ca-certificates ;
 ```
